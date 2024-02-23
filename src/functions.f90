@@ -5,13 +5,6 @@ module functions
     double precision, parameter :: epsilon = 0.1
 
     contains 
-function f(x) result(fres)
-    implicit none 
-    double precision, dimension(1:dim) :: fres
-    double precision, intent(in) :: x
-    fres = x**2
-    
-end function 
 
 function g(x) result(gres)
     implicit none

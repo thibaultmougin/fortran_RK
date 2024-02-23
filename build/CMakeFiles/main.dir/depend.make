@@ -3,3 +3,4 @@
 
 # Note that incremental build could trigger a call to cmake_copy_f90_mod on each re-build
 CMakeFiles/main.dir/main.f90.o: CMakeFiles/shared_mods.dir/functions.mod.stamp
+CMakeFiles/main.dir/main.f90.o: CMakeFiles/shared_mods.dir/rk.mod.stamp

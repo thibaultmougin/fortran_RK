@@ -15,7 +15,7 @@ endif()
 
 add_executable(main main.f90)
 
-add_library(shared_mods functions.f90)
+add_library(shared_mods functions.f90 RK.f90)
 
 target_link_libraries(main shared_mods)
 

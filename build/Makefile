@@ -187,6 +187,30 @@ shared_mods/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mods.dir/build.make CMakeFiles/shared_mods.dir/build
 .PHONY : shared_mods/fast
 
+RK.o: RK.f90.o
+.PHONY : RK.o
+
+# target to build an object file
+RK.f90.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mods.dir/build.make CMakeFiles/shared_mods.dir/RK.f90.o
+.PHONY : RK.f90.o
+
+RK.i: RK.f90.i
+.PHONY : RK.i
+
+# target to preprocess a source file
+RK.f90.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mods.dir/build.make CMakeFiles/shared_mods.dir/RK.f90.i
+.PHONY : RK.f90.i
+
+RK.s: RK.f90.s
+.PHONY : RK.s
+
+# target to generate assembly for a file
+RK.f90.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/shared_mods.dir/build.make CMakeFiles/shared_mods.dir/RK.f90.s
+.PHONY : RK.f90.s
+
 functions.o: functions.f90.o
 .PHONY : functions.o
 
@@ -249,6 +273,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... shared_mods"
+	@echo "... RK.o"
+	@echo "... RK.i"
+	@echo "... RK.s"
 	@echo "... functions.o"
 	@echo "... functions.i"
 	@echo "... functions.s"
