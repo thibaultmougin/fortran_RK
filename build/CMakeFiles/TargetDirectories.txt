@@ -1,0 +1,8 @@
+/home/tmougin/cours/AMSX02/pres/build/CMakeFiles/main.dir
+/home/tmougin/cours/AMSX02/pres/build/CMakeFiles/shared_mods.dir
+/home/tmougin/cours/AMSX02/pres/build/CMakeFiles/edit_cache.dir
+/home/tmougin/cours/AMSX02/pres/build/CMakeFiles/rebuild_cache.dir
+/home/tmougin/cours/AMSX02/pres/build/CMakeFiles/list_install_components.dir
+/home/tmougin/cours/AMSX02/pres/build/CMakeFiles/install.dir
+/home/tmougin/cours/AMSX02/pres/build/CMakeFiles/install/local.dir
+/home/tmougin/cours/AMSX02/pres/build/CMakeFiles/install/strip.dir

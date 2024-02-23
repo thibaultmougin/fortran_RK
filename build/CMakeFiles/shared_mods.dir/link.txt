@@ -1,0 +1,2 @@
+/usr/bin/ar qc libshared_mods.a CMakeFiles/shared_mods.dir/functions.f90.o
+/usr/bin/ranlib libshared_mods.a
