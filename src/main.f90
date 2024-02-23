@@ -23,8 +23,9 @@ program main
     u(i+1)=RK_exp(u(i),t,f,A,b,c)
   end do 
 
+  print*, "Writing to data.dat"
 
-  open(1, file = 'data.dat', status = 'new')  
+  open(1, file = 'data.dat', status = 'replace')  
    do i=1,nb_pts  
       write(1,*) x(i), u(i)   
    end do  

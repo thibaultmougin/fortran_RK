@@ -12,14 +12,14 @@ module RK
         
     end subroutine 
 
-    function RK_exp(un, t, f, A, b, c) result(u)
+    function RK_exp(un, t, func, A, b, c) result(u)
 
         double precision, intent(in) :: un, b(:), c(:), t 
         double precision, intent(in) :: A(:,:)
         double precision :: u 
-        external f
+        external func
 
-        call f(un, t, u)
+        call func(un, t, u)
 
     end function 
 
