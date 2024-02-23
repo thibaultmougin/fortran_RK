@@ -9,9 +9,6 @@ module RK
         double precision ::  y 
 
         y = x**2
-
-        
-        
         
     end subroutine 
 

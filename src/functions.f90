@@ -10,6 +10,7 @@ function g(x) result(gres)
     implicit none
     double precision, intent(in) :: x
     double precision, dimension(1:dim) :: gres
+    
 
     gres=x**2
     
