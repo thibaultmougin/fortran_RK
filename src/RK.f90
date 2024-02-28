@@ -4,22 +4,29 @@ module RK
     contains
 
     subroutine f(x, t, y)
-        double precision :: x, t  
+        implicit none
+        integer, parameter :: n = 1
+        double precision, dimension(n) :: x,y 
+        double precision :: t   
+        integer i
 
-        double precision ::  y 
-
-        y = x**2
+        do i=1,size(y)
+            y(i)=x(i)
+        end do 
         
     end subroutine 
 
-    function RK_exp(un, t, func, A, b, c) result(u)
+    function euler_exp(un, tn, delta_t, func) result(u)
 
-        double precision, intent(in) :: un, b(:), c(:), t 
-        double precision, intent(in) :: A(:,:)
-        double precision :: u 
+        double precision, dimension(:), intent(in) :: un
+        double precision :: tn, delta_t
         external func
+        double precision, dimension(size(un)) ::  increment, u
 
-        call func(un, t, u)
+        call func(un, tn, increment)
+
+        u = un + delta_t*increment
+
 
     end function 
 
